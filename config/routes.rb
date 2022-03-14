@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get "/favs" => "fav_songs#index"
-
+  get "/favs/:id" => "fav_songs#show"
+  post "/favs" => "fav_songs#create"
 end

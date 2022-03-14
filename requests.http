@@ -1,1 +1,17 @@
 GET http://localhost:3000/favs
+
+
+###
+GET http://localhost:3000/favs/1
+
+###
+POST http://localhost:3000/favs
+Content-Type: application/json
+
+{
+  "title": "Me and Julio Down by the Schoolyard",
+  "album": "Paul Simon",
+  "artist": "Paul Simon",
+  "year": 1972
+}
+
