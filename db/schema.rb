@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_03_14_165310) do
+ActiveRecord::Schema[7.0].define(version: 2022_03_14_171115) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "titles", force: :cascade do |t|
-    t.string "ablum"
+  create_table "fav_songs", force: :cascade do |t|
+    t.string "title"
+    t.string "album"
     t.string "artist"
     t.integer "year"
     t.datetime "created_at", null: false
