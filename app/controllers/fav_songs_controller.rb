@@ -1,0 +1,2 @@
+class FavSongsController < ApplicationController
+end
